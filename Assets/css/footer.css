@@ -1,0 +1,80 @@
+.main-footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.contact-us {
+    background: #434F59;
+    color: #D9D9D9;
+    padding: 1rem 0.7rem;
+}
+
+.main-footer .left-side .contact-us .contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.contact-icon img {
+    width: 20%;
+}
+
+.right-side {
+    background: #556573;
+    color: #D9D9D9;
+}
+
+.main-footer .right-side form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.right-side form fieldset {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.right-side fieldset input,
+.right-side fieldset textarea {
+    background-color: #556573;
+    border: 1px solid #fff;
+    font-size: 14px;
+    color: #D9D9D9;
+}
+
+.right-side fieldset input::placeholder,
+.right-side fieldset textarea::placeholder {
+    padding-left: 0.3rem;
+    color: #D9D9D9;
+}
+
+.right-side form fieldset .phone-container {
+    padding-top: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side form fieldset textarea {
+    resize: none;
+}
+
+.right-side fieldset input[type="submit"] {
+    border: 0;
+    background: #434F59;
+    color: #D9D9D9;
+    padding: 0.5rem 1rem;
+}
+
+.valid {
+    border: 2px solid green;
+}
+
+.invalid {
+    border: 2px solid red;
+}
