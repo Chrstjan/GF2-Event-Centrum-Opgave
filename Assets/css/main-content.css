@@ -31,10 +31,6 @@
     padding: 1rem 0.7rem;
 }
 
-.about-us .about-logos {
-
-}
-
 .about-logos .about-icon {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -43,4 +39,19 @@
 
 .about-logos .about-icon img {
     width: 100%;
+}
+
+/* Desktop */
+@media (min-width: 1300px) {
+    .hero-image .hero-figcaption {
+        left: 6%;
+        top: 10%;
+        font-size: 18px;
+        max-width: 330px;
+    }
+
+    .about-us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
