@@ -1,3 +1,57 @@
-.teambulding header {
+.teambulding header,
+.gallery-figure h2 {
     text-align: center;
+}
+
+.teambulding .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+    position: relative;
+}
+
+.image-gallery .gallery-figure {
+    position: relative;
+}
+
+.image-gallery .gallery-figure img {
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.gallery-figure img:hover {
+    scale: 1.1;
+}
+
+.gallery-figure a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 17px;
+}
+
+.event-container {
+    border: 2px solid #000;
+    color: #fff;
+    background: #333;
+}
+
+.event-container .event-figure {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.event-container .event-figure img{
+    width: 100%;
+}
+
+/* Desktop */
+@media (min-width: 1300px) {
+    .teambulding .image-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

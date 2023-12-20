@@ -111,7 +111,7 @@ const createForm  = () => {
     const errorTextContainer = document.createElement("div");
     errorTextContainer.classList.add("error-text");
 
-    const appendChildren = (parent, elements) => {
+   const appendChildren = (parent, elements) => {
         elements.forEach((element) => {
             parent.appendChild(element);
         });
